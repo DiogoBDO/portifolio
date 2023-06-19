@@ -1,0 +1,207 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+p{
+    font-family: 'Montserrat', sans-serif
+}
+/*CORES*/
+:root {
+    --primary-bg: #FFFF;
+    --secondary-bg: #2D2D2D;
+    --light-secondary-bg: #313131;
+
+
+    --primary-text: #FFFF;
+    --secondary-text:#2D2D2D;
+    --details-text:#59bba2;
+  }
+/*HEADER - BOTÕES*/
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    padding: .5vw;
+    text-decoration: none;
+    width: 100%;
+    margin:0%;
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    color:#2D2D2D;
+    border: 1px solid var(--details-text);
+}
+.button::before{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(89,187,162,0.15) 0%, rgba(89,187,162,0) 70%);
+    z-index: -1;
+    transition: all .3s;
+}
+.button::before{
+    width: 100%;
+    height: 0%;
+    top:0px;
+    left:0px;
+}
+.button:hover::before{
+    height: 100%;
+}
+.b1{
+    border-bottom-left-radius: 20px;
+}
+.b4{
+    border-bottom-right-radius: 20px;
+}
+
+/* TITULO E ANIMAÇÕES */
+h3{
+    text-align: end;
+    font-size: 2.5vw;
+}
+#name{
+    width: fit-content;
+}
+h2{
+    font-size: 4vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px;
+}
+#name h1{
+    padding: 0px;
+    color: #59bba2;
+    font-size: 5vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid var(--details-text); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40),
+        blink-caret .75s step-end infinite;
+    }
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--details-text);}
+}
+.maintext{
+    align-items: center;
+    justify-content: center;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+/*IMAGENS*/
+.images{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.images img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 35vw; 
+    height: 35vw; 
+    object-fit: cover;
+}
+.skills{
+    display: flex;
+    width: 100%;
+    background-color: var(--secondary-bg);
+    color:var(--primary-text);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vw;
+}
+
+.skills li{
+    list-style: none;
+    margin-top: 2.5vh;
+}
+.skills h2{
+    color: var(--details-text);
+    text-align: center;
+    padding: 2vw;
+}
+#skillsId{
+    width: 35%;
+    padding-left:3vw;
+    padding-right:3vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills b{
+    font-size: 1.3vw;
+    text-align: left;
+}
+.hardskills:hover,.softskills:hover{
+    background-color: var(--light-secondary-bg);
+}
+  /*DIVS COLORIDAS */
+.images{
+    background-color: var(--primary-bg);
+}
+.content{
+    width: auto;
+    background-color: var(--primary-bg);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.about{
+    text-align: center;
+    padding: 5vw;
+    background-color: var(--secondary-bg);
+    color: var(--primary-text)
+}
+.about h2{
+    font-size: 3vw;
+    color:var(--details-text);
+    text-align: center;
+}
+.abouttext{
+    font-size: 1.3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+.main{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+}
+#submain{
+    width: 100%;
+}
+.char{
+    background-color: var(--secondary-bg);
+}
+.char img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 45vw; 
+    height: 45vw; 
+    object-fit: cover;
+}
