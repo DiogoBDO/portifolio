@@ -5,11 +5,9 @@ Bem-vindo ao meu portfólio! Este repositório contém uma coleção dos meus pr
 ## Como usar
 
 1. Clone este repositório em sua máquina local:
-2. 
+2. Navegue até o diretório do projeto:
 3. Navegue até o diretório do projeto:
-
 4. Abra os projetos individualmente em um editor de código ou IDE de sua preferência.
-
 5. Siga as instruções de cada projeto para configurar e executar conforme necessário.
 
 ## Contribuição
